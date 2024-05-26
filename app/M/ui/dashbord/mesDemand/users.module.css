@@ -1,0 +1,97 @@
+.container{
+    background-color: var(--bgSoft);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+  
+  .top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .addButton{
+   
+    padding: 10px;
+    background-color: #509edd;
+    color: var(--text);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .addButton:hover{
+    background-color: #79d5ef;
+  
+  }
+
+
+.table {
+    margin-top: 10px;
+    width: 100%;
+  }
+  
+  .table th, .table td {
+    border-bottom: 1px solid #5b99e1; 
+    border-right: 1px solid #74b5dd; 
+    padding: 10px;
+  }
+  
+  
+  .table th {
+    background-color: #f0f0f0; 
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+ 
+  
+  
+  
+  
+  .user{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  
+  
+  .buttons{
+    display: flex;
+    gap: 10px;
+  }
+  
+  .button{
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: var(--text);
+    border: none;
+    cursor: pointer;
+  }
+  
+  .view{
+    background-color: rgb(74, 169, 247);
+  }
+  .view:hover{
+    background-color: rgb(171, 211, 243);
+  }
+  .delete{
+    background-color: rgb(147, 176, 219);
+  }
+  .delete:hover{
+    background-color: rgb(199, 210, 227);
+  }
+  .alertMessage {
+    margin-top: 10px;
+    color:var(--textsoft);
+    font-size: 24px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+  }

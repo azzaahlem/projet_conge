@@ -1,0 +1,86 @@
+.container {
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;  
+  
+}
+
+.u {
+  padding: 40px;
+  border-radius: 20px;
+}
+
+.title {
+
+  margin: 20px;
+  font-weight: 200;
+  color: var(--textsoft);
+}
+
+.table {
+    margin-top: 10px;
+    width: 100%;
+  }
+  
+  .table th, .table td {
+    border-bottom: 1px solid #5b99e1; 
+    border-right: 1px solid #74b5dd; 
+    padding: 10px;
+  }
+.user {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.userImage {
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.status {
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 14px;
+  color: white;
+}
+
+.pending {
+  background-color: rgb(76, 173, 141);
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+.y {
+  background-color: rgb(223, 119, 119);
+  border-radius: 5px;
+  color: var(--text);
+  padding: 5px 10px;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+  width: 80px;
+}
+
+.x {
+  background-color: rgb(82, 178, 219);
+  border-radius: 5px;
+  border-radius: 5px;
+  color: var(--text);
+  padding: 5px 10px;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+  width: 80px;
+}
+.alertMessage {
+  color:var(--textsoft);
+  font-size: 24px;
+  text-align: center;
+  padding: 20px;
+  background-color: #ace2f4;
+ 
+  border-radius: 5px;
+}

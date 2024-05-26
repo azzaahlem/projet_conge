@@ -1,0 +1,65 @@
+.container {
+   display: flex;
+   
+   height: 100vh; /* S'assurer que l'élément prend toute la hauteur de la fenêtre */
+   background-color: #f5f5f5; /* Couleur de fond légère */
+ }
+ 
+ .content {
+   flex: 4;
+   padding: 20px;
+ }
+ 
+ .wrapper {
+   display: flex;
+   justify-content: center; /* Centrer le contenu horizontalement */
+   align-items: center; /* Centrer le contenu verticalement */
+   padding: 20px;
+ }
+ 
+ .main {
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   text-align: center; /* Centrer le texte */
+ }
+ 
+ @keyframes loopText {
+   0%, 100% {
+     transform: scaleX(1);
+   }
+   50% {
+     transform: scaleX(1.1);
+   }
+ }
+ 
+ .welcome_message h1,
+ .welcome_message h3 {
+   animation: loopText 5s ease-in-out infinite, gradient 10s infinite; /* Appliquer les deux animations */
+   font-family: 'Arial', sans-serif;
+   text-align: center;
+   margin-top: 1cm;
+   display: inline-block; /* Assurer que chaque élément peut être animé individuellement */
+ }
+ 
+ .welcome_message h1 {
+   font-size: 36px;
+   margin-bottom: 20px;
+ }
+ 
+ .welcome_message h3 {
+   font-size: 24px;
+ }
+ 
+ @keyframes gradient {
+   0% {
+     color: #125309; /* Première couleur */
+   }
+   50% {
+     color: #5e73d1; /* Deuxième couleur */
+   }
+   100% {
+     color: #c22e0d; /* Retour à la première couleur */
+   }
+ }
+ 

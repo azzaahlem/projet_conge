@@ -1,0 +1,107 @@
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Form Styles */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.top {
+  display: flex;
+  gap: 10px;
+}
+
+.input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.addButton {
+  padding: 10px 20px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.addButton:hover {
+  background-color: #0056b3;
+}
+
+/* Table Styles */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.table thead tr {
+  background-color: #aad6f3;
+}
+
+.table td, .table th {
+  padding: 10px;
+  border: 1px solid #a8d1ec;
+  text-align: left;
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: #d0def8;
+}
+
+/* Update Form Styles */
+.updateContainer {
+  margin-top: 20px;
+}
+
+.updateContainer .form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.updateContainer label {
+  font-weight: bold;
+}
+
+.updateContainer input[type="text"] {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #28a745;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #218838;
+}
+
+.modifier {
+  background-color: #6092dd;
+}
+
+.modifier:hover {
+  background-color: #2b29ce;
+}

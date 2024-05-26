@@ -1,0 +1,48 @@
+
+  .container {
+    background-color:#6fbcf8 ;
+    padding: 20px;
+    border-radius: 10px;
+    display:block;
+    gap: 20px;
+    cursor: pointer;
+    width: 100%;
+    justify-content: space-between;
+  }
+  
+  
+  
+  .texts {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .number {
+    font-size: 24px;
+    font-weight: 500;
+  }
+  
+  .detail {
+    font-size: 14px;
+    font-weight: 300;
+  }
+  .card{
+    background-color: #83c9e2;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 5px;
+    justify-content: space-between;
+    cursor: pointer;
+    width: 100%;
+  }
+  .container{
+    display: block;
+    background-color: var(--bgSoft);
+      margin: 10px;
+  }
+  .bg{
+    width: 20%;
+  }
+  
+ 

@@ -1,0 +1,40 @@
+.container{
+   display: flex; 
+   top: 5px;
+ }
+ .menu{
+    --bg:#edf7f8;
+    --bgSoft:#cdedf7;
+    --cont:#a3e2f5;
+    --text:#153aa9;
+    --textSoft:rgb(18, 47, 139);
+ }
+ .content{
+ 
+    flex: 4;
+    padding: 20px;
+ }
+ .wrapper{
+    margin-top:20px ;
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    background-color: var(--bgSoft);
+    border-radius: 10px;
+ }
+ .main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+ }
+ .cards{
+    
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+ }
+ .side{
+    flex: 3;
+    
+ 
+ }

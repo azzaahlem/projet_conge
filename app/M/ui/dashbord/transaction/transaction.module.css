@@ -1,0 +1,64 @@
+.container {
+  background-color: var(--bgSoft);
+  padding: 40px;
+  border-radius: 20px;
+ 
+}
+
+.u {
+
+  background-color: var(--bgSoft);
+  padding: 40px;
+  border-radius: 20px;
+}
+
+.title {
+
+  margin-bottom: 20px;
+  font-weight: 200;
+  color: var(--textsoft);
+}
+
+.table {
+  width: 100%;
+}
+
+.table td {
+  padding: 10px;
+}
+
+.user {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.userImage {
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.status {
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 14px;
+  color: white;
+}
+
+.pending {
+  background-color: rgb(76, 173, 141);
+}
+
+.y {
+  background-color: brown;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 14px;
+}
+
+.x {
+  background-color: aqua;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 14px;
+}

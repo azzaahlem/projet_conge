@@ -1,0 +1,67 @@
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+   margin-top: 5px;
+}
+
+.form {
+  background-color: var(--bgSoft);
+  padding: 50px;
+  border-radius: 10px;
+  margin-left: 20px;
+  margin-right: 250px;
+  width: 500px;
+  height:100% ;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  align-items: center;
+  border: 1px solid #3b9ceb;
+ 
+}
+
+.form input,
+.form select {
+  width: 100%; /* Set a specific width for all input and select elements */
+  padding: 2px;
+  border: 2px solid #2f1ecb;
+  border-radius: 5px;
+  background-color: var(--bgSoft);
+  color: var(--text);
+ 
+}
+
+.D {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+ 
+ 
+}
+
+.form button {
+  padding: 10px;
+  background-color: rgb(93, 158, 232);
+  color: var(--text);
+  cursor: pointer;
+  border-radius: 5px;
+  width: 50%;
+}
+.form button:hover {
+
+  background-color: rgb(116, 183, 219);
+
+}
+.form label {
+  width: 100%;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: var(--bgSoft);
+  color: var(--text);
+  text-align: center; /* Center-align the text within the label */
+}
+

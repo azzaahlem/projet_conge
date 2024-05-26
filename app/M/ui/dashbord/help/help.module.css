@@ -1,0 +1,35 @@
+.container {
+  background-color: var(--bgSoft);
+    padding: 20px;
+    border-radius: 10px;
+    display:block;
+    gap: 20px;
+    cursor: pointer;
+    width: 97%;
+    justify-content: space-between;
+      height: 80%;
+    margin-right: 14px;
+  }
+  
+  .texts {
+    color: var(--textSoft);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+
+  
+  
+
+  .container h3 {
+    font-size: 24px;
+    color:var(--textSoft);
+    margin-bottom: 10px;
+  }
+  
+  .container h5 {
+    font-size: 18px;
+    color: var(--textSoft);
+    margin-top: 5px;
+  }

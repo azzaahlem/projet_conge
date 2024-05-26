@@ -1,0 +1,37 @@
+.container{
+   width: 100%;
+   height: 100vh;
+   display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('/web.jpg');
+  
+}
+.form{
+    background-color: var(--bgSoft);
+    padding: 50px;
+    border-radius: 10px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+}
+.form input{
+    width: 100%;
+    padding: 30px;
+    border: 2px solid #1e2b93;
+    border-radius: 5px;
+    background-color: var(--bgSoft);
+    color: var(--text);
+}
+.form button{
+ padding: 30px;
+ background-color: rgb(67, 129, 227);
+ color: var(--text);
+ border:none ;
+ cursor: pointer;
+ border-radius: 5px;
+ width: 100%;
+}
