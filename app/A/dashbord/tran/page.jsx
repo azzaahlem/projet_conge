@@ -2,7 +2,8 @@ import Image from 'next/image';
 import style from '/app/A/ui/dashbord/transaction/transaction.module.css';
 import { auth } from '/app/authh';
 import { Demandes } from '/app/lib/Data';
-
+import {StatusAcceptDemande}from 'app/lib/actions';
+import{StatusRefuseDemande} from 'app/lib/actions';
 
 const Transaction = async() => {
   const {user} = await auth();
