@@ -56,7 +56,7 @@ export const authenticate = async (prevState,formData) => {
 
 
   export const updateUser = async (formData) => {
-    const { id, username, user_familly_name,email,password,address,functionn,user_responsable,credit } = Object.fromEntries(formData);
+    const { id, username, user_familly_name,email,password,address,functionn,user_responsabe,credit } = Object.fromEntries(formData);
     
     try {
       connectToDB();
@@ -68,7 +68,7 @@ export const authenticate = async (prevState,formData) => {
         password,
         address,
         functionn,
-        user_responsable,
+        user_responsabe,
         credit,
       };
     
