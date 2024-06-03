@@ -17,7 +17,7 @@ const Service = async({searchParams}) => {
       <div className={style.container}>
          <form action={addService} className={style.form} >
        
-             <div className={style.top}>
+        <div className={style.top}>
          
          
             <label>اضافة مسؤول جديد</label>

@@ -51,22 +51,31 @@ const NePage =async ({searchParams}) => {
                   </div>
       
       <div className={styles.forminputdiv}>
-        <label htmlFor="myInput">المنصب:</label>
-          <select name="job">
-            <option hidden></option>
-            {services.map((service) => ( <option>{service.service_name}</option>))}
-            <option>موظف</option>
-            </select>
-            <label htmlFor="myInput">المسؤول عنه:</label>
-          <select name="user_responsabe">
-            <option hidden></option>
-            {services.map((service) => ( <option>{service.service_name}</option>))}
-           
-               </select></div>
+    
+  <label htmlFor="job">المهنة:</label>
+  <select name="job" id="job">
+    <option value="" hidden></option>
+    {services.map((service) => (
+      <option key={service.service_id} value={service.service_name}>
+        {service.service_name}
+      </option>
+    ))}
+    <option value="موظف">موظف</option>
+  </select>
+  
+  <label htmlFor="user_responsabe">المسؤول عنه:</label>
+  <select name="user_responsabe" id="user_responsabe">
+    <option value="" hidden></option>
+    {services.map((service) => (
+      <option key={service.service_id} value={service.service_name}>
+        {service.service_name}
+      </option>
+    ))}
+  </select>
+</div>
 
-      
               <label htmlFor="fileInput" >الصورة:</label> 
-               <input type="String" name='img' />
+               <input type="file" name='img' />
         
              <label htmlFor="fileInput">كلمة المرور</label>
             <input type="text"  name="password" required/>

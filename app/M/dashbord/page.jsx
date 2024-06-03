@@ -1,5 +1,11 @@
-
 "use client"
+
+import Card from '../ui/dashbord/card/card';
+import Card2 from '../ui/dashbord/card2/card2';
+import Card3 from '../ui/dashbord/card3/card3';
+
+
+
 import style from '../ui/dashbord/dashbord.module.css';
 import { useState, useEffect } from 'react'
 
@@ -14,9 +20,10 @@ const Dashboard = () => {
   return (
     <div className={style.wrapper}>
       <div className={style.main}>
-      <div className={style.welcome_message}>
-          <h1>مرحبًا بك في منصة طلبات العطل التعويضية ورخص الخروج!</h1>
-          <h3 >نحن هنا لتسهيل إجراءاتك ومساعدتك في إدارة طلباتك بكل سهولة ويسر. نأمل أن تجد تجربتك معنا مريحة وفعّالة.</h3>
+        <div className={style.cards}>
+          <Card />
+          <Card2 />
+          <Card3 />
         </div>
       </div>
     </div>
