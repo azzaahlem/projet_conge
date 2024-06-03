@@ -56,7 +56,7 @@ export const authenticate = async (prevState,formData) => {
 
 
   export const updateUser = async (formData) => {
-    const { id, username, user_familly_name,email,password,address,functionn,user_responsabe,credit } = Object.fromEntries(formData);
+    const { id, username, user_familly_name,email,password,address,functionn,user_responsabe,credit,job } = Object.fromEntries(formData);
     
     try {
       connectToDB();
@@ -70,6 +70,7 @@ export const authenticate = async (prevState,formData) => {
         functionn,
         user_responsabe,
         credit,
+        job,
       };
     
       Object.keys(updateFields).forEach(
@@ -92,17 +93,9 @@ export const authenticate = async (prevState,formData) => {
   export const addUser=async(formData)=>{
     "use server"
   const {username, user_familly_name,email,password,address,functionn,job,user_responsabe,credit,img,phone}=Object.fromEntries(formData);
-  console.log(img)
-  let imgString ; 
-  if (img && typeof img === "string") {
-    imgString = fs.readFileSync(path.resolve(__dirname, img), 'base64');
-  } 
-  else if (Buffer.isBuffer(img)) {
-    imgString = img.toString('base64');
-    
-  }
+ 
   
-  console.log(imgString)
+ 
   try{
   connectToDB();
   const newUser=new User({
@@ -115,7 +108,7 @@ export const authenticate = async (prevState,formData) => {
      job,
      user_responsabe,
      credit,
-     img: imgString,
+     img,
      phone
   });
   await newUser.save();
@@ -270,6 +263,28 @@ export const adddemande = async (formData) => {
      
        
    }
+};
+
+
+// *******************************************************************************
+export const addService=async(formData)=>{
+  "use server"
+const {service_name}=Object.fromEntries(formData);
+try{
+connectToDB();
+const newService=new Service({
+  service_name,
+  
+});
+await newService.save();
+}
+catch(err){
+console.log(err);
+throw new error('failed');
+}
+
+revalidatePath("/M/dashbord/service");
+redirect("/M/dashbord/service");
 };
 // **********************************************************************************
 export const updateService = async (formData) => {
