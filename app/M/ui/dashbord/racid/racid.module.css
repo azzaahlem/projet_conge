@@ -1,48 +1,35 @@
+.container {
+  padding: 20px;
+  margin: 15px;
+  border: 1px var(--bgSoft);
+  border-radius: 10px;
+  background-color:var(--bgSoft); /* Light background color */
+  text-align: center; /* Center-align text */
+}
 
-  .container {
-    background-color:#6fbcf8 ;
-    padding: 20px;
-    border-radius: 10px;
-    display:block;
-    gap: 20px;
-    cursor: pointer;
-    width: 100%;
-    justify-content: space-between;
-  }
-  
-  
-  
-  .texts {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-  
-  .number {
-    font-size: 24px;
-    font-weight: 500;
-  }
-  
-  .detail {
-    font-size: 14px;
-    font-weight: 300;
-  }
-  .card{
-    background-color: #83c9e2;
-    padding: 20px;
-    border-radius: 10px;
-    margin: 5px;
-    justify-content: space-between;
-    cursor: pointer;
-    width: 100%;
-  }
-  .container{
-    display: block;
-    background-color: var(--bgSoft);
-      margin: 10px;
-  }
-  .bg{
-    width: 20%;
-  }
-  
- 
+.title {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+  font-family: 'Arial', sans-serif; /* Use a clean font for the title */
+}
+
+.card {
+  padding: 30px;
+  margin: 0 auto; /* Center the card */
+  border-radius: 15px;
+  background-color: #ffffff; /* White background for the card */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  max-width: 300px; /* Limit the width of the card */
+}
+
+.number {
+  font-size: 48px;
+  color: #ff4500; /* Eye-catching color for the number */
+  font-weight: bold;
+  font-family: 'Courier New', Courier, monospace; /* Use a monospaced font for the number */
+  background-color: #fafafa; /* Light background for the number */
+  padding: 10px 20px; /* Add some padding around the number */
+  border-radius: 10px; /* Rounded corners for the number background */
+  display: inline-block; /* Ensure the number background fits its content */
+}

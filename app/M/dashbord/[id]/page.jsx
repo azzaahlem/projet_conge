@@ -24,7 +24,7 @@ const SingleUserPage = async ({ params,searchParams }) => {
           
           <Image
           className={styles.userImage}
-         src={users.img || "/image/noavatar.jpg"} alt=""  />
+         src={users.img || "/image/noavatar.jpg"} alt="" fill />
         
         </div>
          {users.username} {users.user_familly_name}
@@ -56,7 +56,7 @@ const SingleUserPage = async ({ params,searchParams }) => {
          
           <select name="job">
             <option hidden></option>
-            {services.map((service) => ( <option key={service.id}>{service.service_name}</option>))}
+            {services.map((service) => ( <option>{service.service_name}</option>))}
             <option>موظف</option>
             </select>
 
@@ -64,7 +64,7 @@ const SingleUserPage = async ({ params,searchParams }) => {
          
           <select name="user_responsabe">
             <option hidden></option>
-            {services.map((service) => ( <option key={service.id}>{service.service_name}</option>))}
+            {services.map((service) => ( <option>{service.service_name}</option>))}
            
                </select>
 

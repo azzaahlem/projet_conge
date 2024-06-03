@@ -24,16 +24,17 @@ const Employe = async({searchParams}) => {
         </Link>
       </div>
       <table className={style.table}>
-        <thead>
+        <thead className={style.table}>
           <tr>
             <td>رقم</td>
             <td>الاسم واللقب</td>
             <td>رقم الهاتف</td>
             <td>العنوان</td>
             <td>البريد الإلكتروني</td>
-            <td>المهنة</td>
+            <td>المنصب</td>
             <td>المسؤول</td>
             <td>الرصيد</td>
+            <td></td>
           </tr>
         </thead>
 
@@ -59,7 +60,7 @@ const Employe = async({searchParams}) => {
             <td>{user.email}</td>
 
           
-            <td>{user.functionn}</td>
+            <td>{user.job}</td>
             <td>{user.user_responsabe}</td>
             <td>{user.credit}</td>
             <td>
@@ -69,11 +70,12 @@ const Employe = async({searchParams}) => {
                     تعديل
                   </button>
                 </Link>
-                <form action={deleteUser}>
+                <Link href={`/M/dashbord/deleteUser/${user.id}`}>
                   <input type="hidden" name="id" value={user.id} />
                 <button className={`${style.button} ${style.supprimer}`}>
                  حذف
-                </button></form>
+                </button>  
+                 </Link> 
               </div>
             </td>
           </tr>

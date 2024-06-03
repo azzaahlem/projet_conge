@@ -1,3 +1,4 @@
+
 .container {
   background-color: var(--bgSoft);
     padding: 20px;
@@ -21,7 +22,18 @@
 
   
   
-
+  .card{
+    color: var(--textSoft);
+    background-color: #83c9e2;
+    padding: 20px;
+    border-radius: 20px;
+    display:block;
+    margin-top: 20p;
+    gap: 20px;
+    cursor: pointer;
+    width: 100%;
+    margin: 10px;
+  }
   .container h3 {
     font-size: 24px;
     color:var(--textSoft);
@@ -32,4 +44,5 @@
     font-size: 18px;
     color: var(--textSoft);
     margin-top: 5px;
-  }
+  } 
+ 
