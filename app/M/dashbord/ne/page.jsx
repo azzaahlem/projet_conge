@@ -54,13 +54,13 @@ const NePage =async ({searchParams}) => {
         <label htmlFor="myInput">المنصب:</label>
           <select name="job">
             <option hidden></option>
-            {services.map((service) => ( <option>{service.service_name}</option>))}
+            {services.map((service) => ( <option key={pm}>{service.service_name}</option>))}
             <option>موظف</option>
             </select>
             <label htmlFor="myInput">المسؤول عنه:</label>
           <select name="user_responsabe">
             <option hidden></option>
-            {services.map((service) => ( <option>{service.service_name}</option>))}
+            {services.map((service) => ( <option key={op}>{service.service_name}</option>))}
            
                </select></div>
 
