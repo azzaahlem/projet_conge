@@ -39,7 +39,7 @@ const NePage =async ({searchParams}) => {
                       <input type="number" name="credit"/>
             
                      <label htmlFor="myInput">الرتبة :</label>
-                     <select name='functionn'>
+                     <select name='functionn' required>
                           <option hidden></option>
                          <option>عميد </option>
                           <option>مسؤول مباشر</option>
@@ -52,15 +52,15 @@ const NePage =async ({searchParams}) => {
       
       <div className={styles.forminputdiv}>
         <label htmlFor="myInput">المنصب:</label>
-          <select name="job">
+        <select name="job">
             <option hidden></option>
-            {services.map((service) => ( <option key={pm}>{service.service_name}</option>))}
+            {services.map((service) => (     <option key={service.id}>{service.service_name}</option>))}
             <option>موظف</option>
             </select>
             <label htmlFor="myInput">المسؤول عنه:</label>
-          <select name="user_responsabe">
+            <select name="user_responsabe">
             <option hidden></option>
-            {services.map((service) => ( <option key={op}>{service.service_name}</option>))}
+            {services.map((service) => ( <option key={service.id}>{service.service_name}</option>))}
            
                </select></div>
 
