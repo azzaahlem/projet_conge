@@ -13,7 +13,7 @@ const Navbar = () => {
     <img
           className={styles.userImage}
           // src="/image/logo1.jpg"
-          src="/image/جامعة غرداية كلية العلوم والتكنولوجيا (1).png"
+          src="/image/جامعة غرداية كلية العلوم والتكنولوجيا (3).png"
           alt='no_image'
         />
     </div>

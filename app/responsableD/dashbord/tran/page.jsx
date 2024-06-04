@@ -17,7 +17,7 @@ const Transaction = async() => {
           <div className={style.alertMessage}>
           <div>
             <Image
-              src={"/image/noavatar.jpg"}
+              src={"/image/search not found_.png"}
               width={200}
               height={200}
               alt="User Image"

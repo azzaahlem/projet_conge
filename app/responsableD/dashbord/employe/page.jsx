@@ -32,7 +32,7 @@ const Employe = async({searchParams}) => {
             <td>رقم الهاتف</td>
             <td>العنوان</td>
             <td>البريد الإلكتروني</td>
-            <td>المهنة</td>
+            <td>المنصب</td>
           </tr>
         </thead>
 
@@ -50,7 +50,7 @@ const Employe = async({searchParams}) => {
             <td>{employee.phone}</td>
             <td>{employee.address}</td>
             <td>{employee.email}</td>
-            <td>{employee.functionn}</td>
+            <td>{employee.job}</td>
           </tr>
 
   
