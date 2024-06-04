@@ -32,10 +32,10 @@ const Userspage = async() => {
           <div className={styles.alertMessage}>
           <div>
             <Image
-              src={"/image/noavatar.png"}
+              src={"/image/search not found_.png"}
               width={200}
               height={200}
-              alt="User Image"
+              alt="User "
             />
           </div>
           <h4 >لايوجد اي طلب مقدم !!</h4>
