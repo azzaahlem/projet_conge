@@ -65,8 +65,8 @@ const NePage =async ({searchParams}) => {
                </select></div>
 
       
-              <label htmlFor="fileInput" >الصورة:</label> 
-               <input type="String" name='img' />
+            {/*  <label htmlFor="fileInput" >الصورة:</label> 
+               <input type="String" name='img' />*/}
         
              <label htmlFor="fileInput">كلمة المرور</label>
             <input type="text"  name="password" required/>
